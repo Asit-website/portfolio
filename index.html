@@ -731,9 +731,9 @@
     <script src="js/main.js"></script>
     <script>
         
-        // let name = document.getElementById('name').value
-        // let email = document.getElementById('email').value
-        // let project = document.getElementById('project').value
+        let name = document.getElementById('name').value
+        let email = document.getElementById('email').value
+        let project = document.getElementById('project').value
         // fetch("https://formsubmit.co/ajax/asitmandal492@gmail.com", {
         //     method: "POST",
         //     headers: {
@@ -763,7 +763,6 @@
     })
 
     XHR.addEventListener("load", (event) => {
-    //   alert("Get Back You Soon");
       sol.style.display="block";
     });
 
@@ -781,6 +780,8 @@
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     sendData("https://formsubmit.co/ajax/asitmandal492@gmail.com");
+    form.reset();
+    
   });
 });
 
